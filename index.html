@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Administrativo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <h2>AdminPanel</h2>
+      <nav>
+        <a href="#">🏠 Inicio</a>
+        <a href="#">📦 Inventario</a>
+        <a href="#">🛒 Ventas</a>
+        <a href="#">👥 Usuarios</a>
+        <a href="#">📊 Reportes</a>
+      </nav>
+    </aside>
+
+    <header class="header" role="banner">
+      <div>
+        <h1>Dashboard Administrativo</h1>
+        <p>Control general de ventas, inventario y usuarios</p>
+      </div>
+      <button class="btn">Nuevo reporte</button>
+    </header>
+
+    <main class="main" role="main">
+      <section class="cards" aria-label="Tarjetas de resumen">
+        <article class="card">
+          <h3>Ventas</h3>
+          <p class="number">$12.500</p>
+          <span>+15% este mes</span>
+        </article>
+
+        <article class="card">
+          <h3>Productos</h3>
+          <p class="number">348</p>
+          <span>Inventario activo</span>
+        </article>
+
+        <article class="card">
+          <h3>Usuarios</h3>
+          <p class="number">1.245</p>
+          <span>Registrados</span>
+        </article>
+
+        <article class="card">
+          <h3>Pedidos</h3>
+          <p class="number">86</p>
+          <span>Pendientes</span>
+        </article>
+      </section>
+
+      <section class="content">
+        <article class="table-box">
+          <h2>Últimos pedidos</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Estado</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Laura Gómez</td>
+                <td>Laptop</td>
+                <td><span class="status success">Entregado</span></td>
+                <td>$850</td>
+              </tr>
+              <tr>
+                <td>Carlos Ruiz</td>
+                <td>Mouse</td>
+                <td><span class="status pending">Pendiente</span></td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <td>Ana Torres</td>
+                <td>Monitor</td>
+                <td><span class="status process">Proceso</span></td>
+                <td>$230</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="chart-box">
+          <h2>Actividad mensual</h2>
+          <div class="bars" aria-label="Gráfico de barras de ventas">
+            <div style="height: 60%"><span>Ene</span></div>
+            <div style="height: 80%"><span>Feb</span></div>
+            <div style="height: 45%"><span>Mar</span></div>
+            <div style="height: 90%"><span>Abr</span></div>
+            <div style="height: 70%"><span>May</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p>© 2026 Dashboard Administrativo | Desarrollado con HTML5, CSS Grid y Flexbox</p>
+    </footer>
+
+  </div>
+</body>
+</html>
